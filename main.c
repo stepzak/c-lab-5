@@ -5,7 +5,7 @@
 
 #include "generic_linked_list.h"
 
-DEFINE_LINKED_LIST(double);
+DEFINE_LINKED_LIST(double, double);
 
 double_LinkedList* insertionSort_double_LinkedList(double_LinkedList* list) {
     double_LinkedList* sortedList = copy_double_LinkedList(list);
