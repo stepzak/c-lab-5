@@ -1,0 +1,7 @@
+# ninja log v6
+0	23	1765753617041388495	build.ninja	3e17f7d631085791
+35	60	1765751986157694067	c_lab_6	4aa110eb4f107b5f
+17	121	1765751005703963966	CMakeFiles/c_lab_6.dir/insertion_sort_double.c.o	5bf0235a376854ad
+1	27	1765309606693380551	CMakeFiles/c_lab_6.dir/linked_list.c.o	13a1c574c1fdb5f6
+1	35	1765751986123694279	CMakeFiles/c_lab_6.dir/main.c.o	cd36777ab50307c0
+3	31	1765289350501214255	CMakeFiles/c_lab_6.dir/types.c.o	32b2e6628e081a46

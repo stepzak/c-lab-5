@@ -1,11 +1,7 @@
 #include <stdio.h>
 //#include "linked_list.h"
 #define min(a,b) (((a) < (b)) ? (a) : (b))
-#include <stdlib.h>
-
-#include "generic_linked_list.h"
-
-DEFINE_LINKED_LIST(double, double);
+#include "double_linked_list.h"
 
 double_LinkedList* insertionSort_double_LinkedList(double_LinkedList* list) {
     double_LinkedList* sortedList = copy_double_LinkedList(list);
@@ -62,26 +58,11 @@ void insertIntoSorted(double_LinkedList* list, double value) {
 
 int main(void) {
     double_LinkedList *list = create_double_LinkedList();
-    append_double_LinkedList(list, 10);
-    append_double_LinkedList(list, 20);
-    append_double_LinkedList(list, 15);
-    append_double_LinkedList(list, 30);
-    append_double_LinkedList(list, 9);
-    append_double_LinkedList(list, 8);
-    append_double_LinkedList(list, 60);
-    prepend_double_LinkedList(list, 100);
-
-    double_Iterator* iterator = create_double_Iterator(list);
-    while (!is_double_End(iterator)) {
-        inc_double_Iterator(iterator);
-        double val = get_double_NodeValue(get_double_Iterator(iterator));
-        printf("%lf\n", val);
+    double x;
+    while (scanf("%lf", &x) == 1) {
+        append_double_LinkedList(list, x);
     }
-    printf("----------------------\n");
-    double_LinkedList* sorted = insertionSort_double_LinkedList(list);
-    insertIntoSorted(sorted, 200);
-    insertIntoSorted(sorted, 32.1);
-    insertIntoSorted(sorted, 7);
+    double_LinkedList *sorted = insertionSort_double_LinkedList(list);
     double_Iterator* iterator2 = create_double_Iterator(sorted);
     while (!is_double_End(iterator2)) {
         inc_double_Iterator(iterator2);

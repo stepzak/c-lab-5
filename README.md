@@ -4,6 +4,6 @@
 
 **Метод**: сортировка простой вставкой
 
-```gcc -Wall generic_linked_list.h main.c -o lab5.o```
+```gcc -Wall declare_linked_list.h main.c -o lab5.o```
 
 ```./lab5.o```
